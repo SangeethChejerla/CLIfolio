@@ -10,7 +10,11 @@ export const HelpCommands:Command[] = [
   { name: 'resume', description: 'Checkout my Resume' },
   { name: 'clear', description: 'Clear the terminal' },
   { name: 'experience', description: 'Checkout my professional experience' },
-  { name: 'goals', description: 'My future plans' }
+  { name: 'goals', description: 'My future plans' },
+  {name:'opinion',description:'rate the project'},
+  {name:'exit',description:'exit the terminal'},
+  {name:'joke',description:'how about a joke?'},
+  {name:'date',description:'you wannna see date'},
 ];
 
 
@@ -69,3 +73,17 @@ export const interestItems: GoalItem[] = [
   { text: '2. Claim rightful place' },
   { text: '3. Complete my stories and add a few interesting ones' }
 ];
+
+{/* options */}
+
+export const MESSAGES = {
+  likeProject: "you really like the project, thanks a bunch",
+  giveStar: "Thanks for giving a star on GitHub!",
+  no: "Then why are you still here, backing off, stupid?",
+  thanksNoStar: "No need for a star then!",
+};
+
+export const ACTIONS = {
+  yes: "yes",
+  no: "no",
+};

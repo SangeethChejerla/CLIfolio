@@ -42,14 +42,14 @@ const Command: React.FC = () => {
           <div className="flex flex-row mb-0.5">
             <div className="text-teal-500 font-bold ml-10  selection:bg-yellow-900">
               {" "}
-              visitor@jerry~${" "}
+              kali@kali:~${" "}
             </div>
             <div className="ml-2 font-mono selection:bg-yellow-900">
               {item.command}
             </div>
           </div>
           <div
-            className="font-mono text-left ml-16 mb-3 selection:bg-yellow-900 mr-10"
+            className="font-mono text-left ml-16 mb-3 selection:bg-gray-600 mr-10"
             id="output-content"
           >
             {item.output}
@@ -57,12 +57,12 @@ const Command: React.FC = () => {
         </div>
       ))}
       <div className="flex flex-row">
-        <div className="text-teal-500 font-bold ml-10 selection:bg-yellow-900">
+        <div className="text-teal-500 font-bold ml-10 selection:bg-gray-600">
           {" "}
-          visitor@jerry~${" "}
+          kali@kali:~${" "}
         </div>
         <input
-          className="bg-transparent outline-none border-none font-mono ml-2 text-amber-500 w-2/3"
+          className="bg-transparent outline-none border-none font-mono ml-2 text-green-500 w-2/3"
           type="text"
           ref={inputRef}
           value={currentCommand}

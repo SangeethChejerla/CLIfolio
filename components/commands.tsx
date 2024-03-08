@@ -7,7 +7,10 @@ import SocialItem from "./sub-components/social-info";
 import Skills from "./sub-components/skill";
 import Projects from "./sub-components/project";
 import InterestItem from "./sub-components/goal-item";
-
+import Myoptions from "./sub-components/option";
+import ExitScreen from "./sub-components/exit";
+import Jokes from "./sub-components/joke";
+import Datetime from "./sub-components/date-time";
 
 
 interface CommandItem {
@@ -87,9 +90,29 @@ export const getOutput = (
           ))}
         </div>
       );
+    
+      case "opinion":
+        return(
+          
+          <Myoptions/>
+       
+        )
 
+        case "exit":
+          return(
+            <ExitScreen/>
+          )
 
-
+          case "joke":
+            return(
+              <Jokes/>
+            )
+            
+            case "date":
+              return(
+                <Datetime/>
+              )
+  
     default:
       return (
         <div>

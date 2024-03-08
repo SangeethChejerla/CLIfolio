@@ -56,6 +56,19 @@ export const keybindings = (
       setCurrentCommand("goals");
     } else if (currentCommand.toLowerCase().startsWith("e")) {
       setCurrentCommand("experience");
+    } else if (currentCommand.toLowerCase().startsWith("o")) {
+      setCurrentCommand("opinion");
     }
+    else if (currentCommand.toLowerCase().startsWith("x")) {
+      setCurrentCommand("exit");
+    }
+    else if (currentCommand.toLowerCase().startsWith("j")) {
+      setCurrentCommand("joke");
+    }
+    else if (currentCommand.toLowerCase().startsWith("d")) {
+      setCurrentCommand("date");
+    }
+
+    
   }
 };
