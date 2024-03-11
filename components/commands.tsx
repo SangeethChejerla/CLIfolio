@@ -66,7 +66,7 @@ export const getOutput = (
 
     case "resume":
       window.open(
-        "https://drive.google.com/file/d/1IKx6bvwpaMueK7BAwQp-a5GkBJoZNj9u/view?usp=sharing",
+        "",
         "_blank"
       );
       return "Heading to resume...";
